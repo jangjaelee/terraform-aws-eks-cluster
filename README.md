@@ -23,11 +23,15 @@ module "eks_cluster" {
   vpc_name        = local.vpc_name
   cluster_name    = local.cluster_name
   cluster_version = local.cluster_version
-  
+
   cluster_public_access_cidrs = ["0.0.0.0/0"]
-  cluster_log_types = ["api", "audit", "authenticator", "controllerManager", "scheduler"] 
-  #kms_arn_eks = "arn:aws:kms:ap-northeast-2:000000000000:key/21d5f9b3-5fc4-43d6-a1d0-3836246327a1"
+  cluster_log_types           = ["audit"]
+  #cluster_log_types           = ["api", "audit", "authenticator", "controllerManager", "scheduler"]
+
+  kms_enable  = false
   kms_arn_eks = ""
+  #kms_arn_eks = "arn:aws:kms:ap-northeast-2:000000000000:key/21d5f9b3-5fc4-43d6-a1d0-3836246327a1"
+
   create_endpoint_ecr = true
 
   private_sub_env1 = "1"
