@@ -70,6 +70,12 @@ variable "enable_public_subnet" {
   default     = true
 }
 
+variable "kms_enable" {
+  description = "enable or disable for kms"
+  type        = bool
+  default     = false
+}
+
 variable "kms_arn_eks" {
   description = "Amazon Resource Name (ARN) of the Key Management Service (KMS) customer master key (CMK)."
   type        = string
