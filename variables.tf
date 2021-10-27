@@ -126,6 +126,7 @@ variable "create_endpoint_ecr" {
   description = "Controls if VPC Endpoint for ECR should be created""
   type        = bool
   default     = false
+}
 
 variable "tags" {
   description = "A map of tags to add to all resources"
