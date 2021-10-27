@@ -19,7 +19,7 @@ resource "aws_eks_cluster" "this" {
     delete = "20m"
   }
   
-  dynamic encryption_config {
+  encryption_config {
     count = var.kms_enable ? 1 : 0
 
     provider {
