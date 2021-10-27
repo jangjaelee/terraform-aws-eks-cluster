@@ -123,7 +123,7 @@ variable "private_subnets" {
 }
 
 variable "create_endpoint_ecr" {
-  description = "Controls if VPC Endpoint for ECR should be created""
+  description = "Controls if VPC Endpoint for ECR should be created"
   type        = bool
   default     = false
 }
