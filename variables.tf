@@ -48,6 +48,7 @@ variable "eks_api_server_ingress_cidr_blocks" {
 variable "vpc_endpoint_subnet_ids" {
   description = "List of subnet IDS for endpoint ENI"
   type        = list(string)
+  default     = [""]
 }
 
 
