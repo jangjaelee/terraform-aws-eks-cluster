@@ -1,4 +1,4 @@
-# AWS EKS Cluster Terraform module
+# Amazon EKS Cluster Terraform module
 
 Terraform module which creates EKS Cluster resources on AWS.
 
